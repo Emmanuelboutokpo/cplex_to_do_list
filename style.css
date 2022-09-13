@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    background:hsla(0, 0%, 98%, 0.656);
+}
+
+.body{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    background:hsl(235, 21%, 11%);
+}
+
+.divImg{
+    background-image: url(./images/bg-desktop-light.jpg);
+    background-position: 44% 10%;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.divImgDark{
+    background-image: url(./images/bg-desktop-dark.jpg);
+    background-position: 35% 1%;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+.highContainer{
+    position: absolute;
+   top: 0;
+   padding: 30px;
+   width: 100%;
+    min-height: 100vh;
+}
+
+.todoHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.appName{
+    color: #fff;
+    line-height: 1.6;
+    letter-spacing: 5px;
+}
+
+input{
+    width: 81.5%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    outline: none;
+}
+
+.inputDark{
+    background: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+
+.btn{
+    background: url("./images/icon-moon.svg") no-repeat 50% 50%;
+    height: 35px;
+    width: 25px;
+    border-radius: 0px;
+    border: none;
+    cursor: pointer;
+    font-size: 0px;
+}
+
+.btnDark{
+    background: url("./images/icon-sun.svg") no-repeat 50% 50%;
+    height: 35px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.add{
+    height: 40px;
+    width: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    font-size: 16px;
+}
+
+.addDark{
+    background: hsl(235, 24%, 19%);
+    color: rgb(118, 118, 118);
+}
+
+.add:hover{
+   background: rgb(38, 6, 79);
+   color: #fff;
+   transition: 1s;
+}
+
+.todolistEl{
+    list-style: none;
+    margin: 20px 0px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.todoElement{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    height: 50px;
+    padding: 5px;
+    border-bottom:2px solid hsl(236, 33%, 92%);
+}
+
+.todoElement:first-child{
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+
+.todoElementD{
+    background: hsl(235, 24%, 19%);
+    color: hsl(234, 39%, 85%);
+}
+
+.todoElement:nth-last-child(1){
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+}
+
+.check{
+    margin-left: 7px;
+    line-height: 1.6;
+    font-size: 15px;
+    flex-grow: 1;
+    text-align: left;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.edit, .trash{
+    background: transparent;
+    border: none;
+    margin-right: 10px;
+}
+
+.trashD, .editD{
+    color: hsl(234, 11%, 52%);
+}
+
+.todo-information{
+    background: #fff;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    padding: 5px;
+    justify-content: space-between;
+}
+
+.todo-informationD{
+    background: hsl(235, 24%, 19%);
+    color: hsl(234, 11%, 52%);
+}
+
+i{
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.checked{
+   text-decoration: line-through;
+   font-weight: bold;
+}
+
+@media screen and (min-width: 375px) {
+    input{
+        width: 82.5%;
+    }
+  }
+
+  
+@media screen and (min-width: 412px) {
+    input{
+        width: 84.5%;
+    }
+  }
+  
+@media screen and (min-width: 480px) {
+    input{
+        width: 86%;
+    }
+  }
+
+  @media screen and (min-width: 600px) {
+    input{
+        width: 88%;
+    }
+    .highContainer{
+       padding: 70px;
+    }
+    
+.divImg{
+    height: 250px;
+    position: relative;
+}
+}
+
+@media screen and (min-width: 712px) {
+    input{
+        width: 88%;
+    }
+    .highContainer{
+       padding: 120px;
+    }
+    
+.divImg{
+    height: 250px;
+    position: relative;
+}
+}
+
+@media screen and (min-width: 800px) {
+    input{
+        width: 89%;
+    }
+    .highContainer{
+       padding: 150px;
+    }
+    
+.divImg{
+    height: 250px;
+    position: relative;
+}
+}
+
+
+@media screen and (min-width: 1200px) {
+    input{
+        width: 92%;
+    }
+    .highContainer{
+       padding: 150px 300px;
+    }
+    
+.divImg{
+    height: 250px;
+    position: relative;
+}
+}
